@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop Page</title>
+    <title>Rolex Product Page</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/x-icon" href="./images/fav-icon.png" />
 
     <link
@@ -17,7 +18,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- header -->
@@ -25,16 +25,17 @@
     <header class="header">
       <div class="container">
         <div class="header-container" style="height: auto">
-          <a href="./index.html" class="logo">
+          <a href="#" class="logo">
             <img src="./logo.png" />
           </a>
 
           <div class="nav-links">
-            <a href="./index.html" class="nav-link">Home</a>
-            <a href="./shop.html" class="nav-link">Shop</a>
-            <a href="./about.html" class="nav-link">About</a>
-            <a href="./faq.html" class="nav-link">FAQ</a>
-            <a href="./contact.html" class="nav-link">Contact</a>
+            <a href="./index.html" class="nav-link active">Home</a>
+            <a href="./shop.html"  class="nav-link">Shop</a>
+            <a href="./about.html"  class="nav-link">About</a>
+            <a href="./contact.html"  class="nav-link"
+              >Contact</a
+            >
           </div>
 
           <div class="search-container">
@@ -60,14 +61,10 @@
         <nav class="mobile-nav">
           <ul class="mobile-nav-list">
             <li>
-              <a href="./index.html" class="mobile-nav-link">Home</a>
+              <a href="./index.html" class="mobile-nav-link active">Home</a>
             </li>
             <li><a href="./shop.html" class="mobile-nav-link">Shop</a></li>
-
             <li><a href="./about.html" class="mobile-nav-link">About</a></li>
-            <li>
-              <a href="./faq.html" class="mobile-nav-link">FAQ</a>
-            </li>
             <li>
               <a href="./contact.html" class="mobile-nav-link">Contact</a>
             </li>
@@ -76,310 +73,7 @@
       </div>
     </header>
 
-    <!-- ===== Filter Section ===== -->
-    <section class="filter-section container">
-      <div class="filter-box">
-        <h3>Filter Products</h3>
-
-        <div class="filter-controls">
-          <!-- Brand Filter -->
-          <select id="brand-filter">
-            <option value="all">All Brands</option>
-            <option value="G-Shock">G-Shock</option>
-            <option value="Timex">Timex</option>
-            <option value="Rolex">Rolex</option>
-          </select>
-
-          <!-- Price Filter -->
-          <select id="price-filter">
-            <option value="all">All Prices</option>
-            <option value="0-3000">Below $3000</option>
-            <option value="3000-8000">$3000 - $8000</option>
-            <option value="8000-15000">Above $8000</option>
-          </select>
-
-          <!-- Search Box -->
-          <input
-            type="text"
-            id="search-filter"
-            placeholder="Search by name..."
-          />
-        </div>
-      </div>
-    </section>
-
     <!-- product-page-content -->
-    <div>
-      <h2 class="category-title">G-Shock Collection</h2>
-
-      <div class="product container">
-        <div class="product-card" style="color: #fff" data-id="11">
-          <img src="./images/G-shock/G-shock-1.avif" class="product-image" />
-          <h2 class="product-name">MRGB2100R-2A</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$4300</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-card" style="color: #fff" data-id="12">
-          <img src="./images/G-shock/G-shock-2.avif" class="product-image" />
-          <h2 class="product-name">MRGBF1000B1A</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$2799</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-card" style="color: #fff" data-id="13">
-          <img src="./images/G-shock/G-shock-3.avif" class="product-image" />
-          <h2 class="product-name">GPRH1000-9</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$3999</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-card" style="color: #fff" data-id="14">
-          <img src="./images/G-shock/4G-shock-3.avif" class="product-image" />
-          <h2 class="product-name">GPRH1000-1</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$7999</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-card" style="color: #fff" data-id="15">
-          <img src="./images/G-shock/G-shock-5.avif" class="product-image" />
-          <h2 class="product-name">GBA950-7A</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$10,050</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-card" style="color: #fff" data-id="16">
-          <img src="./images/G-shock/G-shock-6.avif" class="product-image" />
-          <h2 class="product-name">GLXS5600-2</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$12050</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-card" style="color: #fff" data-id="17">
-          <img src="./images/G-shock/G-shock-7.avif" class="product-image" />
-          <h2 class="product-name">GBD800UC-5</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$15000</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-card" style="color: #fff" data-id="18">
-          <img src="./images/G-shock/G-shock-8.avif" class="product-image" />
-          <h2 class="product-name">GBD800-1</h2>
-          <div class="product-info">
-            <div class="price-data">
-              <h2 class="product-price">$17899</h2>
-              <p>Immerse yourself</p>
-            </div>
-            <div
-              class="add-to-cart"
-              onclick="addToCart(this.closest('.product-card'))"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- product-page-content -->
-    <h2 class="category-title">Timex Collection</hz2>
-
-    <div class="product container">
-      <div class="product-card" style="color: #fff" data-id="1">
-        <img src="./images/timex/timex-1.png" class="product-image" />
-        <h2 class="product-name">TIMEX Watch - TWEG17609</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$5036</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="product-card" style="color: #fff" data-id="2">
-        <img src="./images/timex/timex-2.png" class="product-image" />
-        <h2 class="product-name">TIMEX Watch -TWEL13107</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$3756</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="product-card" style="color: #fff" data-id="3">
-        <img src="./images/timex/timex-3.png" class="product-image" />
-        <h2 class="product-name">TIMEX Unisex - TWIXW800T</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$2595</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="product-card" style="color: #fff" data-id="4">
-        <img src="./images/timex/timex-4.png" class="product-image" />
-        <h2 class="product-name">TIMEX Unisex - TWTXW900T</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$4295</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="product-card" style="color: #fff" data-id="5">
-        <img src="./images/timex/timex-5.png" class="product-image" />
-        <h2 class="product-name">TIMEX TWEG19601</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$3996</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="product-card" style="color: #fff" data-id="6">
-        <img src="./images/timex/timex-6.png" class="product-image" />
-        <h2 class="product-name">TIMEX TW00ZP003</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$4396</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="product-card" style="color: #fff" data-id="7">
-        <img src="./images/timex/timex-7.png" class="product-image" />
-        <h2 class="product-name">TIMEX TW00ZP010</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$5036</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="product-card" style="color: #fff" data-id="8">
-        <img src="./images/timex/timex-8.png" class="product-image" />
-        <h2 class="product-name">TIMEX TW0PRE002</h2>
-        <div class="product-info">
-          <div class="price-data">
-            <h2 class="product-price">$6396</h2>
-            <p>Details</p>
-          </div>
-          <div
-            class="add-to-cart"
-            onclick="addToCart(this.closest('.product-card'))"
-          >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- product-page-content -->
-    <h2 class="category-title">Rolex Collection</h2>
 
     <div class="product container">
       <div class="product-card" style="color: #fff" data-id="21">
@@ -387,7 +81,7 @@
         <h2 class="product-name">Premium One</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$999</h2>
+            <h2 class="product-price">$10000</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -403,7 +97,7 @@
         <h2 class="product-name">Premium One</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$888</h2>
+            <h2 class="product-price">$8988</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -422,7 +116,7 @@
         <h2 class="product-name">rolex_GMT-Master II</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$999</h2>
+            <h2 class="product-price">$9799</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -441,7 +135,7 @@
         <h2 class="product-name">rolex_GMT-Master II</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$999</h2>
+            <h2 class="product-price">$9959</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -460,7 +154,7 @@
         <h2 class="product-name">Rolex_Landweller</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$999</h2>
+            <h2 class="product-price">$11999</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -473,13 +167,13 @@
       </div>
       <div class="product-card" style="color: #fff" data-id="26">
         <img
-          src="./images/rolex_landweller/rolex_the-land-dweller-40.png"
+          src="./images/rolex_landweller/rolex_the-land-dweller-40.jpg"
           class="product-image"
         />
         <h2 class="product-name">Rolex_Landweller</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$999</h2>
+            <h2 class="product-price">$9099</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -498,7 +192,7 @@
         <h2 class="product-name">Rolex_Oyster Perpetual</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$999</h2>
+            <h2 class="product-price">$8599</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -517,7 +211,7 @@
         <h2 class="product-name">Rolex_Oyster Perpetual</h2>
         <div class="product-info">
           <div class="price-data">
-            <h2 class="product-price">$999</h2>
+            <h2 class="product-price">$15799</h2>
             <p>Immerse yourself</p>
           </div>
           <div
@@ -540,56 +234,11 @@
         <!-- cart-item-showing -->
       </ul>
       <div class="cart-total">Total: $ <span id="total-price">0</span></div>
-      <div id="checkoutBtn" class="checkout-btn">Checkout</div>
+      <div class="checkout-btn">Checkout</div>
       <!-- <button onclick="clearCart()" class="clear-cart-btn">Clear Cart</button> -->
     </div>
 
-    <!-- ===== Product Demo Section ===== -->
-
-    <div id="product-container" class="product container"></div>
-
-    <!-- ===== Footer Section ===== -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-about">
-          <h3>About Us</h3>
-          <p>
-            We bring you the finest collection of premium watches — blending
-            timeless craftsmanship with modern style.
-          </p>
-        </div>
-
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./shop.html">Products</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h3>Contact Us</h3>
-          <p>Email: support@watchstore.com</p>
-          <p>Phone: +91 98765 43210</p>
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2025 WatchStore. All rights reserved.</p>
-      </div>
-    </footer>
-    <!-- <script src="./productsrc.js"></script> -->
-
-    <script src="./script.js"></script>
-
+    <!-- <script src="./script.js"></script> -->
     <script src="./productsrc.js"></script>
-    
   </body>
 </html>
