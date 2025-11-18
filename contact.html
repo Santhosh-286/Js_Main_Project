@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav-icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header-container" style="height: auto">
+          <a href="./index.html" class="logo">
+            <img src="./logo.png" />
+          </a>
+
+          <div class="nav-links">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./shop.html" class="nav-link">Shop</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./faq.html" class="nav-link">FAQ</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </div>
+
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search watches..."
+            />
+          </div>
+
+          <!-- 🛒 Cart Button in Header -->
+          <div id="carticon" class="cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="cart-badge" id="cart-count">0</span>
+          </div>
+
+          <!-- 🛍️ Cart Popup / Modal -->
+          <div class="cart-model">
+            <div class="cart-head">
+              <h2>Your Cart</h2>
+              <button class="close-btn">X</button>
+            </div>
+            <ul id="cart-items"></ul>
+            <!--  -->
+            <div class="cart-total">Total: $ <span id="total-price">0</span></div>
+            <div id="checkoutBtn" class="checkout-btn">Checkout</div>
+          </div>
+          <button class="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="./index.html" class="mobile-nav-link">Home</a>
+            </li>
+            <li><a href="./shop.html" class="mobile-nav-link">Shop</a></li>
+
+            <li><a href="./about.html" class="mobile-nav-link">About</a></li>
+            <li>
+              <a href="./faq.html" class="mobile-nav-link">FAQ</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="mobile-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- slider -->
+
+    <!-- contact-section -->
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Contact <span>Us</span></h2>
+        <p>
+          We’d love to hear from you! Fill out the form below or reach us
+          directly.
+        </p>
+
+        <div class="contact-content">
+          <!-- Contact Form -->
+          <form id="contact-form" class="contact-form">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Write your message"
+              required
+            ></textarea>
+
+            <button type="submit" class="send-btn">Send Message</button>
+            <p id="form-status" class="form-status"></p>
+          </form>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              <strong><i class="fa-solid fa-location-dot"></i> Address:</strong>
+              123 Fashion Street, Coimbatore, India
+            </p>
+            <p>
+              <strong><i class="fa-solid fa-phone"></i> Phone:</strong> +91
+              98765 43210
+            </p>
+            <p>
+              <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
+              support@watchworld.com
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113410.28255570233!2d76.88483257251707!3d11.014126297388282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1762517396725!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer Section ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            We bring you the finest collection of premium watches — blending
+            timeless craftsmanship with modern style.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@watchstore.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 WatchStore. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script src="./productsrc.js"></script>
+  </body>
+</html>

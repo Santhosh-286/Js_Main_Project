@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav-icon.png" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header-container" style="height: auto">
+          <a href="./index.html" class="logo">
+            <img src="./logo.png" />
+          </a>
+
+          <div class="nav-links">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./shop.html" class="nav-link">Shop</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./faq.html" class="nav-link">FAQ</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </div>
+
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search watches..."
+            />
+          </div>
+
+          <!-- 🛒 Cart Button in Header -->
+          <div id="carticon" class="cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="cart-badge" id="cart-count">0</span>
+          </div>
+
+          <!-- 🛍️ Cart Popup / Modal -->
+          <div class="cart-model">
+            <div class="cart-head">
+              <h2>Your Cart</h2>
+              <button class="close-btn">X</button>
+            </div>
+            <ul id="cart-items"></ul>
+            <!--  -->
+            <div class="cart-total">
+              Total: $ <span id="total-price">0</span>
+            </div>
+            <div id="checkoutBtn" class="checkout-btn">Checkout</div>
+          </div>
+          <button class="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="./index.html" class="mobile-nav-link">Home</a>
+            </li>
+            <li><a href="./shop.html" class="mobile-nav-link">Shop</a></li>
+
+            <li><a href="./about.html" class="mobile-nav-link">About</a></li>
+            <li>
+              <a href="./faq.html" class="mobile-nav-link">FAQ</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="mobile-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- about-banner -->
+    <div class="about-banner-section-main">
+      <div class="about-banner-section">
+        <h1>About Us</h1>
+      </div>
+    </div>
+    <!-- About-section -->
+
+    <div class="about-section-main">
+      <div class="about-section">
+        <div class="about-left-side">
+          <h1>About <span>Us</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            dolores, quasi tempore nulla porro cum explicabo. Ea, sint
+            doloremque reprehenderit cumque, quia at molestias maiores unde
+            voluptate nemo illo possimus earum tenetur atque fuga delectus culpa
+            enim dolores aliquid nesciunt odit. Suscipit veritatis in quam atque
+            sint est soluta commodi? Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Debitis dolores, quasi tempore nulla porro cum
+            explicabo. Ea, sint doloremque reprehenderit cumque, quia at
+            molestias maiores unde voluptate nemo illo possimus earum tenetur
+            atque fuga delectus culpa enim dolores aliquid nesciunt odit.
+            Suscipit veritatis in quam atque sint est soluta commodi? Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Debitis dolores,
+            quasi tempore nulla porro cum explicabo. Ea, sint doloremque
+            reprehenderit cumque, quia at molestias maiores unde voluptate nemo
+            illo possimus earum tenetur atque fuga delectus culpa enim dolores
+            aliquid nesciunt odit. Suscipit veritatis in quam atque sint est
+            soluta commodi?
+          </p>
+          <!-- <a href="./about.html"><button>Learn Us</button></a> -->
+        </div>
+        <div class="about-right-side">
+          <img src="./images/about-bnr-5.jpg" alt="img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- icon-section -->
+    <div class="icon-section-main">
+      <div class="icon-section">
+        <div class="icon-sec-1">
+          <div class="icons">
+            <img src="./images/fast-delivery.png" alt="icons" />
+          </div>
+          <div class="icon-cont">
+            <h3>Free Delivery</h3>
+            <p>Free shipping for all orders</p>
+          </div>
+        </div>
+        <div class="icon-sec-2">
+          <div class="icons">
+            <img src="./images/credit-card.png" alt="icons" />
+          </div>
+          <div class="icon-cont">
+            <h3>Money Return</h3>
+            <p>Back guarantee under 7 days</p>
+          </div>
+        </div>
+        <div class="icon-sec-1">
+          <div class="icons">
+            <img src="./images/24-hours-support.png" alt="icons" />
+          </div>
+          <div class="icon-cont">
+            <h3>Online Support 24/7</h3>
+            <p>Supports online 24 hours a day</p>
+          </div>
+        </div>
+        <div class="icon-sec-2">
+          <div class="icons">
+            <img src="./images/shield.png" alt="icons" />
+          </div>
+          <div class="icon-cont">
+            <h3>Reliable</h3>
+            <p>Trusted by 1000+ brands</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product-section -->
+    <!-- <div class="product-main-section">
+      <h1 class="product-head"><span>Featured</span> Products</h1>
+      <div class="product-section">
+        <div class="product-view">
+          <div class="product-img">
+            <img
+              src="./images/rolex_GMT-Master II/rolex_GMT-Master II_bnr.jpg"
+            />
+          </div>
+          <div class="product-cont">
+            <div class="sec-1">
+              <h2>Rolex Watch</h2>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="sec-2">
+              <p>Price $999</p>
+              <a href="./rolex-watch.html"><button>Explore it</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-view">
+          <div class="product-img">
+            <img src="./images/G-shock/G-shock-5.avif" />
+          </div>
+          <div class="product-cont">
+            <div class="sec-1">
+              <h2>G-shock Watch</h2>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="sec-2">
+              <p>Price $999</p>
+              <a href="./g-shock.html"><button>Explore it</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-view">
+          <div class="product-img">
+            <img src="./images/product-bnr.jpg" />
+          </div>
+          <div class="product-cont">
+            <div class="sec-1">
+              <h2>TIMEX Watch</h2>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="sec-2">
+              <p>Price $999</p>
+              <a href="./timex.html"><button>Explore it</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-view">
+          <div class="product-img">
+            <img
+              src="./images/rolex_Oyster Perpetual/rolex_Oyster Perpetual.png"
+            />
+          </div>
+          <div class="product-cont">
+            <div class="sec-1">
+              <h2>Rolex Watch</h2>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="sec-2">
+              <p>Price $999</p>
+              <a href="./product.html"><button>Explore it</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- banner-section -->
+
+    <div class="home-banner-section-main">
+      <div class="home-banner-section">
+        <div class="home-left-bnr-bg">
+          <div class="home-banner-left">
+            <div class="home-banner-content">
+              <h1>Luxury <span>One</span></h1>
+              <!-- <button> -->
+              <a href="./shop.html" class="primary-btn"
+                ><button>Explore</button></a
+              >
+              <!-- </button> -->
+            </div>
+          </div>
+        </div>
+        <div class="home-right-bnr-bg">
+          <div class="home-banner-right">
+            <div class="home-banner-content">
+              <h1>Luxury <span>One</span></h1>
+              <!-- <button> -->
+              <a href="./shop.html" class="primary-btn"
+                ><button>Explore</button></a
+              >
+              <!-- </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img-slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="./images/about-bnr-2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/about-bnr-5.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- ===== Footer Section ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            We bring you the finest collection of premium watches — blending
+            timeless craftsmanship with modern style.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@watchstore.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 WatchStore. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

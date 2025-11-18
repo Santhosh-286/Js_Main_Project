@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-shock Product Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/fav-icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header-container" style="height: auto">
+          <a href="#" class="logo">
+            <img src="./logo.png" />
+          </a>
+
+          <div class="nav-links">
+            <a href="./index.html" class="nav-link active">Home</a>
+            <a href="./shop.html"  class="nav-link">Shop</a>
+            <a href="./about.html"  class="nav-link">About</a>
+            <a href="./contact.html"  class="nav-link"
+              >Contact</a
+            >
+          </div>
+
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search watches..."
+            />
+          </div>
+
+          <button class="cart-button" id="carticon">
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+
+          <button class="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a href="#" class="mobile-nav-link active">Home</a></li>
+            <li><a href="#" class="mobile-nav-link">Shop</a></li>
+            <li><a href="#" class="mobile-nav-link">About</a></li>
+            <li><a href="#" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- product-page-content -->
+
+    <div class="product container">
+      <div class="product-card" style="color: #fff" data-id="11">
+        <img src="./images/G-shock/G-shock-1.avif" class="product-image" />
+        <h2 class="product-name">MRGB2100R-2A</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$4300</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="12">
+        <img src="./images/G-shock/G-shock-2.avif" class="product-image" />
+        <h2 class="product-name">MRGBF1000B1A</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$2799</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="13">
+        <img src="./images/G-shock/G-shock-3.avif" class="product-image" />
+        <h2 class="product-name">GPRH1000-9</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$3999</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="14">
+        <img src="./images/G-shock/4G-shock-3.avif" class="product-image" />
+        <h2 class="product-name">GPRH1000-1</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$7999</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="15">
+        <img src="./images/G-shock/G-shock-5.avif" class="product-image" />
+        <h2 class="product-name">GBA950-7A</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$10,050</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="16">
+        <img src="./images/G-shock/G-shock-6.avif" class="product-image" />
+        <h2 class="product-name">GLXS5600-2</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$12050</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="17">
+        <img src="./images/G-shock/G-shock-7.avif" class="product-image" />
+        <h2 class="product-name">GBD800UC-5</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$15000</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="18">
+        <img src="./images/G-shock/G-shock-8.avif" class="product-image" />
+        <h2 class="product-name">GBD800-1</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$17899</h2>
+            <p>Immerse yourself</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cart-page -->
+    <div class="cart-model" id="cart-model">
+      <div class="cart-head">
+        <h2>Your Cart</h2>
+        <button class="close-btn">X</button>
+      </div>
+      <ul id="cart-items">
+        <!-- cart-item-showing -->
+      </ul>
+      <div class="cart-total">Total: $ <span id="total-price">0</span></div>
+      <div class="checkout-btn">Checkout</div>
+      <!-- <button onclick="clearCart()" class="clear-cart-btn">Clear Cart</button> -->
+    </div>
+
+    <script src="./productsrc.js"></script>
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>

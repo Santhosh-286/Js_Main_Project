@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="checkout-container">
+      <h2>Checkout <span>Page</span></h2>
+
+      <!-- Cart items display -->
+      <div id="cart-items" class="cart-items"></div>
+      <div class="total">Total: $<span id="total-price">0</span></div>
+
+      <!-- Address and Payment Form -->
+      <div class="form-section">
+        <h3>Shipping Details</h3>
+        <label for="address">Address</label>
+        <textarea
+          id="address"
+          placeholder="Enter your delivery address"
+        ></textarea>
+
+        <label for="payment">Payment Method</label>
+        <select id="payment">
+          <option value="">Select Payment Option</option>
+          <option value="card">Credit / Debit Card</option>
+          <option value="upi">UPI</option>
+          <option value="cod">Cash on Delivery</option>
+        </select>
+
+        <button id="pay-btn">Pay Now</button>
+      </div>
+
+      <div class="thank-you" id="thank-you">
+        🎉 Thank you for your purchase! Your order has been placed.
+      </div>
+
+      <div class="go-back">
+        <a href="product.html">← Back to Products</a>
+      </div>
+    </div>
+
+    <script>
+      // Load cart from localStorage
+      const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+      const cartList = document.getElementById("cart-items");
+      const totalPrice = document.getElementById("total-price");
+
+      let total = 0;
+      cartList.innerHTML = "";
+
+      if (cartItems.length === 0) {
+        cartList.innerHTML = "<p>Your cart is empty.</p>";
+      } else {
+        cartItems.forEach((item) => {
+          const div = document.createElement("div");
+          div.classList.add("cart-item");
+          div.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <div class="cart-details">
+              <strong>${item.name}</strong>
+              <p>$${item.price} × ${item.quantity}</p>
+            </div>
+            <div>$${(item.price * item.quantity).toFixed(2)}</div>
+          `;
+          cartList.appendChild(div);
+          total += item.price * item.quantity;
+        });
+      }
+
+      totalPrice.textContent = total.toFixed(2);
+
+      // Handle payment process
+      document.getElementById("pay-btn").addEventListener("click", () => {
+        const address = document.getElementById("address").value.trim();
+        const payment = document.getElementById("payment").value;
+
+        if (!address) {
+          alert("Please enter your address.");
+          return;
+        }
+
+        if (!payment) {
+          alert("Please select a payment option.");
+          return;
+        }
+
+        // Show thank-you message
+        document.getElementById("thank-you").style.display = "block";
+
+        // Clear cart after purchase
+        localStorage.removeItem("cartItems");
+
+        // Optional: disable button
+        document.getElementById("pay-btn").disabled = true;
+        document.getElementById("pay-btn").textContent = "Processing...";
+
+        setTimeout(() => {
+          document.getElementById("pay-btn").textContent = "Paid ✅";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

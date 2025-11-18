@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timex Product Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/fav-icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header-container" style="height: auto">
+          <a href="#" class="logo">
+            <img src="./logo.png" />
+          </a>
+
+          <div class="nav-links">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./shop.html" class="nav-link">Shop</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./faq.html" class="nav-link">FAQ</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </div>
+
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search watches..."
+            />
+          </div>
+
+          <button class="cart-button" id="carticon">
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+
+          <button class="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="./index.html" class="mobile-nav-link">Home</a>
+            </li>
+            <li><a href="./shop.html" class="mobile-nav-link">Shop</a></li>
+
+            <li><a href="./about.html" class="mobile-nav-link">About</a></li>
+            <li>
+              <a href="./faq.html" class="nav-link">FAQ</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="mobile-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- product-page-content -->
+
+    <div class="product container">
+      <div class="product-card" style="color: #fff" data-id="1">
+        <img src="./images/timex/timex-1.png" class="product-image" />
+        <h2 class="product-name">TIMEX Watch - TWEG17609</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$5036</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="2">
+        <img src="./images/timex/timex-2.png" class="product-image" />
+        <h2 class="product-name">TIMEX Watch -TWEL13107</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$3756</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="3">
+        <img src="./images/timex/timex-3.png" class="product-image" />
+        <h2 class="product-name">TIMEX Unisex - TWIXW800T</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$2595</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="4">
+        <img src="./images/timex/timex-4.png" class="product-image" />
+        <h2 class="product-name">TIMEX Unisex - TWTXW900T</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$4295</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="5">
+        <img src="./images/timex/timex-5.png" class="product-image" />
+        <h2 class="product-name">TIMEX TWEG19601</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$3996</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="6">
+        <img src="./images/timex/timex-6.png" class="product-image" />
+        <h2 class="product-name">TIMEX TW00ZP003</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$4396</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="7">
+        <img src="./images/timex/timex-7.png" class="product-image" />
+        <h2 class="product-name">TIMEX TW00ZP010</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$5036</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="color: #fff" data-id="8">
+        <img src="./images/timex/timex-8.png" class="product-image" />
+        <h2 class="product-name">TIMEX TW0PRE002</h2>
+        <div class="product-info">
+          <div class="price-data">
+            <h2 class="product-price">$6396</h2>
+            <p>Details</p>
+          </div>
+          <div
+            class="add-to-cart"
+            onclick="addToCart(this.closest('.product-card'))"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cart-page -->
+    <div class="cart-model" id="cart-model">
+      <div class="cart-head">
+        <h2>Your Cart</h2>
+        <button class="close-btn">X</button>
+      </div>
+      <ul id="cart-items">
+        <!-- cart-item-showing -->
+      </ul>
+      <div class="cart-total">Total: $ <span id="total-price">0</span></div>
+      <!-- <div class="checkout-btn">Checkout</div> -->
+      <div class="checkout-btn" onclick="goToCheckout()">Checkout</div>
+
+      <!-- <button onclick="clearCart()" class="clear-cart-btn">Clear Cart</button> -->
+    </div>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./productsrc.js"></script>
+  </body>
+</html>
